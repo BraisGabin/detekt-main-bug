@@ -14,6 +14,8 @@ private const val NOTIFICATION_ID = 42
 class NotificationUtil(context: Context) {
 
     init {
+        throw IllegalArgumentException()
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             val name = context.getString(R.string.channel_name)
             val descriptionText = context.getString(R.string.channel_description)
